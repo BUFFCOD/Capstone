@@ -1,5 +1,3 @@
-
-
 /* Reset Styles */
 * {
     margin: 0;
@@ -91,19 +89,7 @@ header h2 {
     gap: 20px;
 }
 
-.spending-trend {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.recent-transactions {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.accounts {
+.spending-trend, .recent-transactions, .accounts {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -132,96 +118,49 @@ header h2 {
     background-color: #1c60c6;
 }
 
-/* Full-width Payoff Calculator */
-.payoff-calculator {
-    width: 100%;
-    max-width: 1200px;  /* Optional: Limits max size */
-    margin: 20px auto;
+/* Gemini Chat Styles */
+.gemini-chat {
+    margin-top: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.payoff-calculator h2 {
+.gemini-chat h2 {
     font-size: 24px;
     margin-bottom: 15px;
 }
 
-.payoff-calculator label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.payoff-calculator input[type="number"] {
+.gemini-chat input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 16px;
 }
 
-.payoff-calculator button {
+.gemini-chat button {
     background-color: #39a4e6;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-.payoff-calculator button:hover {
+.gemini-chat button:hover {
     background-color: #1c60c6;
 }
 
-/* Result Styling */
-#result {
+#chatResult {
     margin-top: 20px;
     font-size: 16px;
     padding: 10px;
     background-color: #f7f7f7;
     border-radius: 5px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .payoff-calculator {
-        width: 90%;  /* Ensures the calculator doesn't stretch too much on smaller screens */
-    }
-
-    .payoff-calculator h2 {
-        font-size: 20px;
-    }
-
-    .payoff-calculator input[type="number"] {
-        padding: 10px;
-    }
-
-    .payoff-calculator button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .payoff-calculator {
-        width: 95%;  /* Makes the calculator almost full width */
-    }
-
-    .payoff-calculator h2 {
-        font-size: 18px;
-    }
-
-    .payoff-calculator input[type="number"] {
-        padding: 8px;
-    }
-
-    .payoff-calculator button {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
 }

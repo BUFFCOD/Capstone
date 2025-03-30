@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Wize</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -19,7 +19,7 @@
             <li>Transactions</li>
             <li>Credit Score</li>
         </ul>
-        <button class="chat-button">Chat with Us</button>
+        <button class="chat-button">Chat with Gemini</button>
     </div>
 
     <!-- Main Content Area -->
@@ -53,37 +53,14 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="payoff-calculator">
-        <h2>Credit Card Payoff Calculator</h2>
-    
-        <label for="balance">Current Balance:</label>
-        <input type="number" id="balance" placeholder="Enter your balance" />
-    
-        <label for="monthlyPayment">Monthly Payment:</label>
-        <input type="number" id="monthlyPayment" placeholder="Enter your monthly payment" />
-    
-        <label for="apr">APR (%)</label>
-        <input type="number" id="apr" placeholder="Enter the APR" />
-    
-        <h3>Subscriptions</h3>
-        <div id="subscriptions">
-            <!-- Example subscription entries will be added here -->
-            <label>
-                <input type="checkbox" class="subscription" data-amount="15" />
-                Netflix - $15
-            </label>
-            <label>
-                <input type="checkbox" class="subscription" data-amount="10" />
-                Spotify - $10
-            </label>
-        </div>
-    
-        <button id="calculatePayoff">Calculate Payoff Time</button>
-    
-        <div id="result"></div>
-    </div>
 
-    
+        <!-- Gemini Chat Section -->
+        <div class="gemini-chat">
+            <h2>Chat with Gemini</h2>
+            <input type="text" id="chatInput" placeholder="Ask Gemini a question...">
+            <button id="sendChat">Send</button>
+            <div id="chatResult"></div>
+        </div>
+    </div>
 </body>
 </html>
