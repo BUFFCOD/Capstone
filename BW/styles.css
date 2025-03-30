@@ -1,0 +1,227 @@
+
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #333;
+}
+
+.chat-button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-button:hover {
+    background-color: #c61c29;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+.sync-button {
+    padding: 10px;
+    background-color: #39a4e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sync-button:hover {
+    background-color: #1c60c6;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.spending-trend {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recent-transactions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.accounts {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.accounts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accounts li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button {
+    padding: 5px;
+    background-color: #39a4e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #1c60c6;
+}
+
+/* Full-width Payoff Calculator */
+.payoff-calculator {
+    width: 100%;
+    max-width: 1200px;  /* Optional: Limits max size */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payoff-calculator h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.payoff-calculator label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.payoff-calculator input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.payoff-calculator button {
+    background-color: #39a4e6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.payoff-calculator button:hover {
+    background-color: #1c60c6;
+}
+
+/* Result Styling */
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .payoff-calculator {
+        width: 90%;  /* Ensures the calculator doesn't stretch too much on smaller screens */
+    }
+
+    .payoff-calculator h2 {
+        font-size: 20px;
+    }
+
+    .payoff-calculator input[type="number"] {
+        padding: 10px;
+    }
+
+    .payoff-calculator button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payoff-calculator {
+        width: 95%;  /* Makes the calculator almost full width */
+    }
+
+    .payoff-calculator h2 {
+        font-size: 18px;
+    }
+
+    .payoff-calculator input[type="number"] {
+        padding: 8px;
+    }
+
+    .payoff-calculator button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
